@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>21 - Physics</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <canvas class="webgl"></canvas>
+      <div class="sidebar">
+        <div class="model">
+          <label for="file">Model</label>
+          <input id="file" type="file" />
+        </div>
+        <div class="env">
+          <label for="env">Global Environment Map</label>
+          <input id="env" type="file" />
+        </div>
+        <div class="properties hidden">
+          <h3>Material</h3>
+          <div class="color hidden">
+            <label for="color">Color</label>
+            <input type="color" id="color" name="color" value="#e66465" />
+          </div>
+          <div class="opacity hidden">
+            <label for="opacity">Opacity</label>
+            <input
+              type="range"
+              id="opacity"
+              name="opacity"
+              min="0"
+              max="1"
+              step="0.001"
+            />
+          </div>
+          <div class="metalness hidden">
+            <label for="metalness">Metalness</label>
+            <input
+              type="range"
+              id="metalness"
+              name="metalness"
+              min="0"
+              max="1"
+              step="0.001"
+            />
+          </div>
+          <div class="roughness hidden">
+            <label for="roughness">Roughness</label>
+            <input
+              type="range"
+              id="roughness"
+              name="roughness"
+              min="0"
+              max="1"
+              step="0.001"
+            />
+          </div>
+          <div class="map hidden">
+            <label for="map">Map</label>
+            <input id="map" type="file" />
+          </div>
+          <div class="normalMap hidden">
+            <label for="normalMap">Normal Map</label>
+            <input id="normalMap" type="file" />
+          </div>
+          <div class="envMap hidden">
+            <label for="envMap">Environment Map</label>
+            <input id="envMap" type="file" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
